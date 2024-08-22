@@ -1,10 +1,18 @@
-import { useState } from 'react'
+
+
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Card from "./components/Card.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <h1>Hello world</h1>
+    <>
+      <Navbar />
+      <h1>Hello world</h1>
+      <Card />
+      <Footer />
+    </>
   )
 }
 

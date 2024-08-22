@@ -34,21 +34,30 @@ let players=[
     }
   ]
 const Card = () => {
-    const [ name, setName]= useState("");
-    const [ plName, setPlName]= useState("");
-    const [ asset, setAsset]= useState("");
     return (
-        <div>
+        <div> 
+          <div className="card">
+                <h3>Real name:</h3>
+                  <p className="rName"></p>
+                <h3>Player name:</h3>
+                  <p className="pName"></p>
+                <h3>Asset:</h3>
+                  <p className="asset"></p>
+              </div>     
             {players.map(player=>
             {
-                <div className="card">
+              <div className="card">
                 <h3>Real name:</h3>
-                <p>{player.realName}</p>
+                  <p className="rName">{player.realName}</p>
                 <h3>Player name:</h3>
-                <p>{player.playerName}</p>
+                  <p className="pName">{player.playerName}</p>
                 <h3>Asset:</h3>
-                <p>{player.realName}</p>
-            </div>
+                  <p className="asset">{player.asset}</p>
+              </div>
+              console.log(player.playerName);
+              console.log(player.realName);
+              console.log(player.asset);
+              console.log("");
             })}
             
         </div>

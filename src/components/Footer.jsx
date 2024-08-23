@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div className="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t md:items-center md:justify-between">
-            CARD GAME
-        </div>
-    )
-}
+  return (
+    <footer className="w-full h-30 bg-slate-400 fixed bottom-0">
+      <p>CARD GAME</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,22 +1,20 @@
-
-
-import Navbar from "./components/Navbar.jsx";
+import Details from "./components/Details.jsx";
 import Footer from "./components/Footer.jsx";
-import Card from "./components/Card.jsx";
+import Cards from "./components/Cards.jsx";
 import Controller from "./components/Controller.jsx";
-import './index.css'
+import "./index.css";
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Controller />
-      <h1>Hello world</h1>
-      <Card />
+    <div className="w-screen h-screen p-5">
+      <div className="flex gap-5">
+        <Details />
+        <Controller />
+      </div>
+      <Cards />
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

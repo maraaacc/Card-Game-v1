@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ player, setActiveCard, activeCard }) => {
   return (
-    <div className="w-2/4 " onClick={() => setActiveCard(player)}>
+    <div className="" onClick={() => setActiveCard(player)}>
       <div className="p-3 m-1 ">
         <div
           className={`flex rounded-lg h-full p-8 flex-col hover:shadow-lg hover:scale-105 transition ${
@@ -13,9 +13,9 @@ const Card = ({ player, setActiveCard, activeCard }) => {
         >
           <div className="flex flex-col justify-between flex-grow">
             <div className="leading-relaxed text-base text-black dark:text-gray-300">
-              <p>-{player.realName}</p>
-              <p>-{player.playerName}</p>
-              <p className="w-20 truncate">-{player.asset}</p>
+              <p className=" truncate">-{player.realName}</p>
+              <p className=" truncate">-{player.playerName}</p>
+              <p className=" truncate">-{player.asset}</p>
             </div>
           </div>
         </div>

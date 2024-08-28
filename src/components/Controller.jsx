@@ -2,7 +2,7 @@ import React from "react";
 
 const Controller = ({ onSortAsc, onSortDesc, onSubmit, activeCard }) => {
   return (
-    <div className="">
+    <div className="flex">
       <div className=" p-8 max-w-sm flex rounded-md h-full dark:bg-gray-800 bg-zinc-200  flex-col">
         <p className="mb-5  text-4xl font-medium text-gray-900 ">Controls</p>
         <div className="flex">
